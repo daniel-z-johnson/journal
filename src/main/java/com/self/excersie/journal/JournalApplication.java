@@ -1,4 +1,4 @@
-package com.self.excersie;
+package com.self.excersie.journal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
