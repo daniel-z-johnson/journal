@@ -1,4 +1,7 @@
 
+#mybatis:
+#    config-location: classpath:mybatis-config.xml
+
 spring:
     profiles:
         active: dev
@@ -6,14 +9,18 @@ spring:
         username: sq
         password:
         driver-class-name: org.h2.Driver
+        initialize: false
+
 ---
+
 spring:
     profiles: dev
     datasource:
         url: jdbc:h2:~/db/journal/journal
 
 ---
+
 spring:
     profiles: test
     datasource:
-        url: jdbc:h2:~/db/journal/journal-test
+        url: jdbc:h2:mem:testdb
