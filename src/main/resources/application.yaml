@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    username: journal
+    password: postgress
+    url: jdbc:postgresql://127.0.0.1:5433/journal
